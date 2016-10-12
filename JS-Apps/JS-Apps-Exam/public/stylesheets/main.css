@@ -1,0 +1,10 @@
+.resource {
+    min-height: 25em;
+}
+
+#btn-logout {
+    cursor: pointer;
+}
+nav {
+    border-radius: 0px;
+}

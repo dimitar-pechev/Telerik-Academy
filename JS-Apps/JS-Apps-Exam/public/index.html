@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GoodMats</title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bower_components/toastr/toastr.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/home"><strong>GoodMats</strong></a></li>
+                    <li><a href="#/home">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right logged-out">
+                    <li>
+                        <a href="#/login">Login</a>
+                    </li>
+                    <li>
+                        <a href="#/register">Sign up</a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right logged-in">
+                    <li>
+                        <a id="myProfile" style="cursor: pointer;">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#/add">Add</a>
+                    </li>
+                    <li>
+                        <a id="btn-logout">Logout</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input id="search-bar" type="text" class="form-control" placeholder="Search..." onfocus="this.placeholder = ''" onblur="this.placeholder ='Search...'"
+                                />
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="container" class="container-fluid">
+
+    </div>
+
+    <!-- libs -->
+    <script src="./bower_components/handlebars/handlebars.js"></script>
+    <script src="./bower_components/navigo/lib/navigo.js"></script>
+    <script src="./bower_components/toastr/toastr.js"></script>
+
+    <!-- app -->
+    <script src="./scripts/requester.js"></script>
+    <script src="./scripts/validator.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/toggle-login.js"></script>
+    <script src="./scripts/teplate-loader.js"></script>
+    <script src="./scripts/controllers.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <script>
+     //   data.getMaterials().then(console.log)
+    </script>
+</body>
+
+</html>

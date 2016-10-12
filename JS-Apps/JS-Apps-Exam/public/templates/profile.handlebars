@@ -1,0 +1,27 @@
+<div id="profile" class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-3 thumbnail">
+            <img src="https://lh6.googleusercontent.com/-PH9HuB8-tgM/UnN-nxB3aGI/AAAAAAAAAIM/4VsrXpuVLzs/w917-h917/classic-awesome-smiley2.png"
+                alt="profile-pic">
+        </div>
+        {{#result}}
+        <div class="col-md-8">
+            <h2>{{username}}</h2>
+            {{#if userMaterials}}   
+            <table class="table table-hover table-condensed">             
+                <th>Title</th>
+                <th>Status</th>
+                {{#userMaterials}}
+                <tr>
+                    <td><a href="#/materials/{{id}}">{{title}}</a></td>
+                    <td>{{category}}</td>
+                </tr>            
+            {{/userMaterials}}
+            </table>
+            {{else}}
+            <h3>User has not added any materials to his watching list!</h3>            
+            {{/if}}
+        </div>        
+        {{/result}}
+    </div>
+</div>

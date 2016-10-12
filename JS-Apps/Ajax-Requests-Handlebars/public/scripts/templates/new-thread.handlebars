@@ -1,0 +1,13 @@
+<div class="thread">
+    <div>
+        <h3>
+            <a class="thread-title" href="#/threads/{{id}}">{{title}}</a>
+        </h3>
+    </div>
+    <div>
+        <p>
+        <span>Created on </span><span class="thread-date">{{#if postDate}}{{postDate}}{{else}} unknown{{/if}}</span>
+        by <a class="thread-creator" href="#">{{#if username}}{{username}}{{else}}anonymous{{/if}}</a>
+        </p>
+    </div>
+</div>

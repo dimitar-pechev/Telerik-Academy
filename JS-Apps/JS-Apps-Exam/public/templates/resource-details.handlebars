@@ -1,0 +1,34 @@
+{{#result}}
+<div id="{{id}}" class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-4 text-center">
+            <div class="thumbnail" style="min-height: 100%">
+            <img src="{{img}}" alt="img">
+            </div>
+            <button id="watching" type="button" class="btn btn-success logged-in">Watching</button>
+            <button id="watched" type="button" class="btn btn-success logged-in">Watched</button>
+            <button id="want-to-watch" type="button" class="btn btn-success logged-in">Want to Watch</button>
+        </div>
+        <div class="col-md-8">
+            <h2>{{title}}</h2>
+            <h4><em>Added by: <a href="#/profiles/{{user.username}}">{{user.username}}</a></em></h4>
+            <p>{{createdOn}}</p>
+            <p>{{description}}</p>            
+            <div id="comments-box">
+            {{#if comments}}
+            <h3><strong>Comments:</strong></h3>
+            {{#comments}}
+            <blockquote>
+               <p><a href="#/profiles/{{user.username}}">{{user.username}}</a></p>
+                <p>{{text}}</p>
+            </blockquote>            
+            {{/comments}}                     
+            {{/if}} 
+            </div>   
+            <div class="form-group logged-in">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Enter your comment here..."></textarea>
+            </div>                             
+        </div>
+    </div>
+</div>
+{{/result}}
