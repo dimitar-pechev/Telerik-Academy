@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           attributeFormDefault="unqualified" 
+           elementFormDefault="qualified" 
+           targetNamespace="urn:students">
+  <xsi:element name="students">
+    <xsi:complexType>
+      <xsi:sequence>
+        <xsi:element maxOccurs="unbounded" name="student">
+          <xsi:complexType>
+            <xsi:sequence>
+              <xsi:element name="name" type="xsi:string" />
+              <xsi:element name="sex" type="xsi:string" />
+              <xsi:element name="birthday" type="xsi:date" />
+              <xsi:element name="phone" type="xsi:string" />
+              <xsi:element name="email" type="xsi:string" />
+              <xsi:element name="course" type="xsi:string" />
+              <xsi:element name="speciality" type="xsi:string" />
+              <xsi:element name="facultyNumber" type="xsi:int" />
+              <xsi:element name="enrollmentDetails">
+                <xsi:complexType>
+                  <xsi:sequence>
+                    <xsi:element name="examDate" type="xsi:date" />
+                    <xsi:element name="score" type="xsi:double" />
+                    <xsi:element name="endorsement" type="xsi:boolean" />
+                  </xsi:sequence>
+                </xsi:complexType>
+              </xsi:element>
+              <xsi:element name="exams">
+                <xsi:complexType>
+                  <xsi:sequence>
+                    <xsi:element maxOccurs="unbounded" name="exam">
+                      <xsi:complexType>
+                        <xsi:sequence>
+                          <xsi:element name="discipline" type="xsi:string" />
+                          <xsi:element name="tutor" type="xsi:string" />
+                          <xsi:element name="score" type="xsi:double" />
+                        </xsi:sequence>
+                      </xsi:complexType>
+                    </xsi:element>
+                  </xsi:sequence>
+                </xsi:complexType>
+              </xsi:element>
+            </xsi:sequence>
+          </xsi:complexType>
+        </xsi:element>
+      </xsi:sequence>
+    </xsi:complexType>
+  </xsi:element>
+</xs:schema>

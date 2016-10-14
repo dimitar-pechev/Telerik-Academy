@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xslt"?>
+<students xmlns:students="urn:students">
+  <student>
+    <name>Adam Lallana</name>
+    <sex>Male</sex>
+    <birthday>1993-01-14</birthday>
+    <phone>+359888888888</phone>
+    <email>lallana@liverpoolfc.co.uk</email>
+    <course>Dribbling</course>
+    <speciality>Football</speciality>
+    <facultyNumber>1233</facultyNumber>
+    <enrollmentDetails>
+      <examDate>2016-10-13</examDate>
+      <score>16.22</score>
+      <endorsement>false</endorsement>
+    </enrollmentDetails>
+    <exams>
+      <exam>
+        <discipline>Ball Kicking</discipline>
+        <tutor>Maxi Rodriquez</tutor>
+        <score>100</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Linda Pizzuti</name>
+    <sex>Female</sex>
+    <birthday>1980-01-01</birthday>
+    <phone>N/A</phone>
+    <email>N/A</email>
+    <course>Being J.W.Henry's Wife</course>
+    <speciality>Being Adorable</speciality>
+    <facultyNumber>1337</facultyNumber>
+    <enrollmentDetails>
+      <examDate>2016-10-13</examDate>
+      <score>92.5</score>
+      <endorsement>true</endorsement>
+    </enrollmentDetails>
+    <exams>
+      <exam>
+        <discipline>Astrophysics</discipline>
+        <tutor>That guy from "The Big Bang Theory"</tutor>
+        <score>101</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Steven George Gerrard</name>
+    <sex>Male</sex>
+    <birthday>1980-05-30</birthday>
+    <phone>N/A</phone>
+    <email>god@heavenonearth.com</email>
+    <course>Everything</course>
+    <speciality>He's simply a God</speciality>
+    <facultyNumber>1</facultyNumber>
+    <enrollmentDetails>
+      <examDate>2016-10-13</examDate>
+      <score>101</score>
+      <endorsement>true</endorsement>
+    </enrollmentDetails>
+    <exams>
+      <exam>
+        <discipline>Football</discipline>
+        <tutor>R.B.Fowler perhaps?</tutor>
+        <score>1001</score>
+      </exam>      
+    </exams>
+  </student>
+</students>
