@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalogue-template.xslt"?>
+<catalogue>
+  <album>
+    <title>Innuendo</title>
+    <artist>Queen</artist>
+    <year>1991</year>
+    <producer>Parlophone Records</producer>
+    <price>7,99</price>
+    <songs>
+      <song>
+        <title>Innuendo</title>
+        <duration>6:31</duration>
+      </song>
+      <song>
+        <title>I'm Going Slightly Mad</title>
+        <duration>4:22</duration>
+      </song>
+      <song>
+        <title>Headlong</title>
+        <duration>4:38</duration>
+      </song>
+      <song>
+        <title>I Can't Live with You</title>
+        <duration>4:33</duration>
+      </song>
+      <song>
+        <title>Don't Try So Hard</title>
+        <duration>3:39</duration>
+      </song>
+      <song>
+        <title>Ride The Wild Wind</title>
+        <duration>4:42</duration>
+      </song>
+      <song>
+        <title>All God's People</title>
+        <duration>4:21</duration>
+      </song>
+      <song>
+        <title>These Are the Days of Our Lives</title>
+        <duration>4:15</duration>
+      </song>
+      <song>
+        <title>Delilah</title>
+        <duration>3:35</duration>
+      </song>
+      <song>
+        <title>The Hitman</title>
+        <duration>4:56</duration>
+      </song>
+    </songs>
+    <song>
+      <title>Bijou</title>
+      <duration>3:36</duration>
+    </song>
+    <song>
+      <title>The Show Must Go On</title>
+      <duration>4:35</duration>
+    </song>
+  </album>
+  <album>
+    <title>A Kind of Magic</title>
+    <artist>Queen</artist>
+    <year>1986</year>
+    <producer>Parlophone Records</producer>
+    <price>29,99</price>
+    <songs>
+      <song>
+        <title>One Version</title>
+        <duration>5:10</duration>
+      </song>
+      <song>
+        <title>A Kind of Magic</title>
+        <duration>4:24</duration>
+      </song>
+      <song>
+        <title>One Year of Love</title>
+        <duration>4:26</duration>
+      </song>
+      <song>
+        <title>Pain Is So Close to Pleasure</title>
+        <duration>4:21</duration>
+      </song>
+      <song>
+        <title>Friends Will Be Friends</title>
+        <duration>4:07</duration>
+      </song>
+      <song>
+        <title>Who Wants to Live Forever</title>
+        <duration>5:15</duration>
+      </song>
+      <song>
+        <title>Don't Lose Your Head</title>
+        <duration>4:38</duration>
+      </song>
+      <song>
+        <title>Princes of the Universe</title>
+        <duration>3:32</duration>
+      </song>      
+    </songs>
+  </album>
+  <album>
+    <title>Sto Kokkino</title>
+    <artist>Elli Kokkinou</artist>
+    <year>2003</year>
+    <producer>Phoebus</producer>
+    <price>11,99</price>
+    <songs>
+      <song>
+        <title>Masai</title>
+        <duration>4:23</duration>
+      </song>
+      <song>
+        <title>Den Gynaite</title>
+        <duration>4:32</duration>
+      </song>
+      <song>
+        <title>Sorry</title>
+        <duration>4:05</duration>
+      </song>
+      <song>
+        <title>Apokalypsi</title>
+        <duration>5:06</duration>
+      </song>
+      <song>
+        <title>Eimai Kala</title>
+        <duration>4:25</duration>
+      </song>
+      <song>
+        <title>Agori Mou</title>
+        <duration>4:11</duration>
+      </song>
+      <song>
+        <title>Thelo Tosa Na Sou Po</title>
+        <duration>3:53</duration>
+      </song>
+      <song>
+        <title>Kosmotheoria</title>
+        <duration>4:09</duration>
+      </song>
+      <song>
+        <title>Kainourgia Arhi</title>
+        <duration>4:54</duration>
+      </song>
+      <song>
+        <title>Fila Me</title>
+        <duration>5:22</duration>
+      </song>
+      <song>
+        <title>Hartaetos</title>
+        <duration>4:08</duration>
+      </song>
+      <song>
+        <title>Erota Mou</title>
+        <duration>3:24</duration>
+      </song>
+      <song>
+        <title>Afto To Kalokairi</title>
+        <duration>4:26</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
