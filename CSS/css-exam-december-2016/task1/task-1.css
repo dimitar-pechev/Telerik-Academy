@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #6E7277;
+}
+
+#wrapper {
+    background-color: #E7E9EC;
+    width: 660px;
+    height: 195px;
+}
+
+.content {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 8px;
+    left: 8px;
+    box-shadow: 0 2px 5px grey;
+}
+
+.content-article {
+    position: absolute;
+    width: 560px;
+    height: 180px;
+    top: 8px;
+    left: 93px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px grey;
+}
+
+.content-article img {
+    width: 190px;
+}
+
+.timestamp {
+    position: absolute;
+    left: 530px;
+    top: 15px;
+    font-weight: bold;
+}
+
+.headline {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+
+.headline a {
+    text-decoration: none;
+    color: #1E99CF;
+}
+
+.side-article {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    border: 1px solid #E6E6E6;
+    width: 528px;
+    height: 100px;
+
+}
+
+.actions {
+    position: absolute;
+    top: 153px;
+    left: 15px;
+    list-style-type: none;
+}
+
+.actions li {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.actions li a {
+    text-decoration: none;
+    color: #339CD3;
+    font-weight: bold;
+}
+
+.likes {
+    position: absolute;
+    top: 153px;
+    left: 175px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.comments {
+    position: absolute;
+    top: 153px;
+    left: 225px;
+    font-weight: bold;
+    background-image: url("imgs/comments.png") no-repeat;
+    font-size: 13px;
+}
+
+.content-description {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 310px;
+}
+
+.content-description h4 {
+    font-size: 16px;
+}
+
+.content-text {
+    padding-top: 13px;
+}
+
+.content-text cite {
+    margin-right: 3px;
+}
+
+.snippet-container {
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+span.likes:before {
+    content: url('./imgs/likes.png');
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+span.comments:before {
+    content: url('./imgs/comments.png');
+    margin-right: 3px;
+}

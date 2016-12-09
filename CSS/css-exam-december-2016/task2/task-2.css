@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 8px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.breadcrumbs {
+    padding-top: 3px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    margin-right: -7px;
+}
+
+.breadcrumbs li a {
+    text-decoration: none;
+    color: #4089D2;
+    font-weight: bold;
+}
+
+.breadcrumbs li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.breadcrumbs li:after {
+    content: "/"
+}
+
+.breadcrumbs li:last-child:after {
+    content: ""
+}
+
+.breadcrumbs li:last-child a {
+    color: black;
+}
+
+.code-header {
+    width: 798px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px 5px 0 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #F7F7F7;
+}
+
+.file-info, .controls {
+    display: inline-block;
+}
+
+.controls {
+    float: right;
+}
+
+.controls a {
+    padding: 10px;
+    background-color: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    margin-right: -10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.controls a:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.controls a:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.controls {
+    margin-right: 20px;
+}
+
+.file-info {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.file-info span:first-child:after {
+    content: "|";
+    color: grey;
+}
+
+.file-info span {
+    margin-right: -10px;
+}
+
+.file-content ol {
+    width: 758px;
+    border-left: 1px solid #D3D3D3;    
+    border-right: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    border-radius: 0 0 5px 5px;
+}
+
+.file-content li {    
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    font-size: 14px;
+    border-left: 1px solid #D3D3D3;
+}
+
+.selector {
+    color: #63A35C;
+}
+
+.property {
+    color: #0086B3;
+}
+
+.measure {
+    color: #A71D5D;
+}
+
+.function {
+    color: #00008B;
+    font-style: italic;  
+    font-weight: bold;  
+}
+
+.property:before {
+    content: '\00a0\00a0\00a0\00a0';
+}

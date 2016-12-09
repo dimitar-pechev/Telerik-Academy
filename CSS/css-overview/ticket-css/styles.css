@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#root {
+    background-color: #595959;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading {
+    color: #B6A895;
+    padding-left: 1.7em
+}
+
+.definition {
+    padding-right: 3em;
+    color: white;
+    font-style: italic;
+}
+
+img {
+    width: 0.8em;
+}
+
+.info {
+   vertical-align: text-top;
+}
+
+.default {
+    color: #FEF2B2;
+}
+
+.danger {
+    color: red;
+}
+
+.warning {
+    color: orange;
+}
+
+.inactive {
+    color: grey;
+}
+
+table {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}

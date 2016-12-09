@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: red;
+    border-radius: 10em;
+    display: table;
+}
+
+.nested {
+    width: 92%;
+    height: auto;
+    background-color: black;
+    vertical-align: middle;
+    border: 2px solid red;
+    border-radius: 10em;
+    display: table;
+}
