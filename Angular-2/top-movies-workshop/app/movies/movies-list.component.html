@@ -1,0 +1,40 @@
+<div class="row text-center">
+    <h1>{{pageTitle}}</h1>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <input (input)="updateFilterQuery($event.target.value)" id="filter-input" class="form-control" type="text" name="filter" placeholder="Filter...">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <form class="form-group">
+                <select (change)="updateSortingCriteria($event.target.value)" id="sort-by" class="form-control">
+                    <option value="title">Title</option>
+                    <option value="year">Year</option>
+                    <option value="imdbRating">iMDB Rating</option>
+                </select>
+            </form>
+        </div>
+        <div class="col-md-5">
+            <form class="form-group">
+                <select (change)="updateOrderCriteria($event.target.value)" id="order" class="form-control">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped table-hover">
+            <thead>
+                <th>Poster</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>IMDB Rating</th>
+            </thead>
+            <tbody>
+                <tr mvdb-movies-short *ngFor="let movie of (movies | filter: filterQuery | sort: [sortBy, order])" [movie]="movie" [routerLink]="['/details', movie.imdbId]"></tr>
+            </tbody>
+        </table>
+    </div>

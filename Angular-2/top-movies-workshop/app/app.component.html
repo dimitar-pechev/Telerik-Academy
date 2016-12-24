@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a routerLink="/" class="navbar-brand">Top Movies</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse navbar-right" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">                    
+                <li>
+                    <a routerLink="/list">Explore</a>
+                </li>
+                <li>
+                    <a routerLink="/top">Rankings</a>
+                </li>            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+    <router-outlet></router-outlet>
+</main>
+
+<footer class="footer panel-footer">
+    <div class="container">
+        <div class="row text-center">
+            Top Movies Workshop. All rights reserved.
+        </div>
+    </div>
+</footer>

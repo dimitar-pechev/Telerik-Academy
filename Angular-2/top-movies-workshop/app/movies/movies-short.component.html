@@ -1,0 +1,17 @@
+<td>
+    <img [src]="movie.poster" [alt]="movie.title">
+</td>
+<td>
+    <a [routerLink]="['/details', movie.imdbId]"><h4>{{movie.title}}</h4></a>
+</td>
+<td>
+    {{movie.year}}
+</td>
+<td>
+    <div class="row">
+        <span class="glyphicon glyphicon-star" *ngFor="let item of createRange(movie.starsCount)"></span><span class="glyphicon glyphicon-star-empty" *ngFor="let item of createRange(5 - movie.starsCount)"></span>
+    </div>
+    <div class="row">
+        {{movie.imdbRating}}/10
+    </div>    
+</td>
