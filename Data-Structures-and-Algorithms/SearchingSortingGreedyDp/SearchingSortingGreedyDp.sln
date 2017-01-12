@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogePlusPlus", "Doge++\DogePlusPlus.csproj", "{1841211F-BB25-4B84-A7EB-1C4312339880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNumber", "FindNumber\FindNumber.csproj", "{E1CB8DEF-FA04-40C6-852A-F5633C96C4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRates", "ExchangeRates\ExchangeRates.csproj", "{D5527F02-4FB1-472A-ACEA-03991DB8A631}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1841211F-BB25-4B84-A7EB-1C4312339880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1841211F-BB25-4B84-A7EB-1C4312339880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1841211F-BB25-4B84-A7EB-1C4312339880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1841211F-BB25-4B84-A7EB-1C4312339880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CB8DEF-FA04-40C6-852A-F5633C96C4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CB8DEF-FA04-40C6-852A-F5633C96C4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CB8DEF-FA04-40C6-852A-F5633C96C4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CB8DEF-FA04-40C6-852A-F5633C96C4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5527F02-4FB1-472A-ACEA-03991DB8A631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5527F02-4FB1-472A-ACEA-03991DB8A631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5527F02-4FB1-472A-ACEA-03991DB8A631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5527F02-4FB1-472A-ACEA-03991DB8A631}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern", "Pattern\Pattern.csproj", "{9B9C0280-CA3F-4058-B33C-8A4E80E15590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passwords", "Passwords\Passwords.csproj", "{9CC89288-A92F-4F9B-B54C-963EBE4BB8B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversePolishNotation", "ReversePolishNotation\ReversePolishNotation.csproj", "{FCBC1D4F-03C9-4367-85FC-62CAD9EB06DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B9C0280-CA3F-4058-B33C-8A4E80E15590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9C0280-CA3F-4058-B33C-8A4E80E15590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9C0280-CA3F-4058-B33C-8A4E80E15590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9C0280-CA3F-4058-B33C-8A4E80E15590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC89288-A92F-4F9B-B54C-963EBE4BB8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC89288-A92F-4F9B-B54C-963EBE4BB8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC89288-A92F-4F9B-B54C-963EBE4BB8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC89288-A92F-4F9B-B54C-963EBE4BB8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCBC1D4F-03C9-4367-85FC-62CAD9EB06DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBC1D4F-03C9-4367-85FC-62CAD9EB06DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBC1D4F-03C9-4367-85FC-62CAD9EB06DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBC1D4F-03C9-4367-85FC-62CAD9EB06DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
