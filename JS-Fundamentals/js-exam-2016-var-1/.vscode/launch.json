@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/02-game-of-tanks/02-game-of-tanks.js",
+            "program": "${workspaceRoot}/03-minava-script/03-minava-script.js",
             "cwd": "${workspaceRoot}"
         },
         {
