@@ -8,14 +8,18 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/03-cookie-super-styles.js",
-            "cwd": "${workspaceRoot}"
+            "program": "${workspaceRoot}/03-cookieless.js",
+            "cwd": "${workspaceRoot}",
+            "outFiles": [],
+            "sourceMaps": true
         },
         {
             "type": "node",
             "request": "attach",
             "name": "Attach to Process",
-            "port": 5858
+            "port": 5858,
+            "outFiles": [],
+            "sourceMaps": true
         }
     ]
 }
