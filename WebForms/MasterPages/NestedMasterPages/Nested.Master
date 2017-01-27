@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" %>
+
+<asp:Content ContentPlaceHolderID="MainContent" ID="ContentPage" runat="server">
+    <div class="jumbotron">
+        <h2>Nested Master Layout</h2>
+    </div>
+    <div class="content">
+        <asp:ContentPlaceHolder ID="NestedMasterContent" runat="server" />
+    </div>
+</asp:Content>
