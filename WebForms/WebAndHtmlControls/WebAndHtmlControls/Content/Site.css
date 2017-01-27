@@ -1,0 +1,76 @@
+﻿.result {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.reg-result * {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.panel-result {
+    height: 50px;
+    width: 1200px;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    border-bottom: none;
+}
+
+.result-placeholder {
+    font-size: 2rem;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.panel-controls {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.number-cell {
+    height: 50px;
+    width: 25%;
+    font-size: 2rem;
+    background-color: lightgoldenrodyellow;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.equals-sign {
+    height: 50px;
+    width: 75%;
+    font-size: 2rem;
+    background-color: lightgoldenrodyellow;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .number-cell:hover, .equals-sign:hover, .number-cell:active, .equals-sign:active {
+        background-color: indianred;
+        border: none;
+    }
+
+.calc-container {
+    border: 1px solid red;
+}
+
+#dangerBtn {
+    color: red;
+    font-weight: bold;
+}
+
+.td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.td:hover {
+    background-image: url('../Images/cross.png');
+    background-repeat: no-repeat;
+}
