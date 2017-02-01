@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DataBindingHW.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><%= Page.Title %></title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Stylesheets/main.css" rel="stylesheet" />
+    <script src="./Scripts/jquery-3.1.1.js"></script>
+    <script src="./Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <form id="MainForm" runat="server">
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">DataBinding</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a runat="server" href="~/Cars.aspx">Cars Rental</a></li>
+                        <li><a runat="server" href="~/EmplyeesGridView.aspx">Employees</a></li>
+                        <li><a runat="server" href="~/XmlTreeView.aspx">XML TreeView</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

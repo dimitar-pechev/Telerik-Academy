@@ -1,0 +1,53 @@
+﻿#MainContent_Extras {
+    margin: auto;
+}
+
+#MainContent_Engine {
+    width: 100%;
+}
+
+#MainContent_SelectedExtras {
+    display: inline-table;
+}
+
+.eployees-table {
+    border: 1px solid #ddd;
+}
+
+    .eployees-table tbody tr:first-child {
+        background-color: white;
+    }
+
+        .eployees-table tbody tr:first-child:hover, #MainContent_EmployeesContent_GridViewEmployees .page-btn:hover {
+            background-color: white;
+        }
+
+    .eployees-table th {
+        text-align: center;
+    }
+
+.emplyees-formview-table {
+    width: 100%;
+}
+
+.popbox {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    width: 400px;
+    padding: 10px;
+    background: #EEEFEB;
+    color: #000000;
+    border: 1px solid #4D4F53;
+    margin: 0px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+    box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+}
+
+.page-btn, #MainContent_EmployeesContent_DataPagerEmployeesPopUp span, #MainContent_EmployeesContent_DataPagerEmployeesPopUp .page-btn:hover {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
