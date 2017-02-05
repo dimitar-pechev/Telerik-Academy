@@ -1,0 +1,8 @@
+﻿#MainContent_GridViewCountries img {
+    max-width: 50px;
+    border: 0.5px solid darkgrey;
+}
+
+.panel-heading {
+    font-weight: bold;
+}
