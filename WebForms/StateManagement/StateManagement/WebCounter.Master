@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="WebCounter.master.cs" Inherits="StateManagement.WebCounter1" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="MainContainer">
+     <div class="row text-center">
+        <h1>WebCounter</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group table-of-contents">
+                    <a class="list-group-item" href="/WebCounter.aspx">Web Counter (Session)</a>
+                    <a class="list-group-item" href="/WebCounterWithDb.aspx">Web Counter (Db Coverage)</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <asp:ContentPlaceHolder ID="WebCounterContainer" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>   
+</asp:Content>

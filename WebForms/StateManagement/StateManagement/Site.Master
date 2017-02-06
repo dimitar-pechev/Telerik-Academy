@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="StateManagement.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><%= Page.Title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-3.1.1.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <form id="FormMain" runat="server">
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">StateManagement</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-left">
+                    <li><a runat="server" href="~/UserAgent.aspx">User Agent</a></li>
+                    <li><a runat="server" href="~/Sessions.aspx">Sessions</a></li>
+                        <li><a runat="server" href="~/ViewStateTerminator.aspx">ViewState Terminator</a></li>
+                        <li><a runat="server" href="~/WebCounter.aspx">Web Counter</a></li>
+                </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a runat="server" href="~/DummyLogin.aspx">Dummy Login</a></li>
+                        <li><a runat="server" href="~/DummyProfile.aspx">Dummy Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContainer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>    
+</body>
+</html>
