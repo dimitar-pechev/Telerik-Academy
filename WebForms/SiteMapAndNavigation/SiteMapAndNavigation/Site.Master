@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SiteMapAndNavigation.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><%= Page.Title %></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="MainForm" runat="server">
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">SiteMaps & Navigation</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <asp:Menu ID="NavigationMenu" runat="server" SkipLinkText=""
+                        EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal"
+                        DataSourceID="SiteMapDataSource" StaticDisplayLevels="2">
+                    </asp:Menu>
+                </div>
+            </div>
+        </div>
+        <asp:SiteMapPath ID="SiteMapPathBreadcrump" runat="server" />
+        <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+        <div>
+            <asp:ContentPlaceHolder ID="MainContainer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

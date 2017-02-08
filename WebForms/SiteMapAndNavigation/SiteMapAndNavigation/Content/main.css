@@ -1,0 +1,54 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+#NavigationMenu {
+    padding-top: 14px;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+    #NavigationMenu ul {
+        list-style-type: none;
+    }
+
+    #NavigationMenu > ul > li {
+        margin-left: 20px;
+    }
+
+    #NavigationMenu ul > li > a {
+        color: white;
+    }
+
+    #NavigationMenu li ul a {
+        color: black;
+        background-color: white;
+        padding: 15px;
+        border: 1px solid grey;
+        display: inline-block;
+        width: 220px;
+    }
+
+    #NavigationMenu li ul li {
+        width: 220px;
+    }
+
+    #NavigationMenu > ul > li > a > ul {
+        margin: 10px 0 0 -50px;
+    }
+
+    #NavigationMenu > ul ul ul {
+        margin-left: -40px;
+    }
+
+    #NavigationMenu > ul > li > ul {
+        margin-left: -40px;
+    }
+
+    #SiteMapPathBreadcrump {
+        display: block;
+        margin-top: -20px;
+        padding: 10px;
+        background-color: #EEEEEE;
+    }
