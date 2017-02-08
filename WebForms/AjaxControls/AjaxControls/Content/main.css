@@ -1,0 +1,67 @@
+﻿.ajax-loader-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+    .ajax-loader-container img {
+        position: absolute;
+        top: 43%;
+        left: 43%;
+        opacity: 1;
+        z-index: 9999;
+    }
+
+#chat-box {
+    padding-top: 5px;
+    padding-right: 5px;
+    height: 400px;
+    text-align: right;
+}
+
+#chat-box {
+    overflow: auto;
+    text-overflow: ellipsis;
+    line-break: strict;
+}
+
+.message-content {
+    line-break: auto;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.message-date, .message-author {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.image-container {
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.image {
+    max-height: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#MainContainer_BtnPrevious {
+    position: fixed; 
+    top: 40%;
+    left: -20%;
+}
+
+#MainContainer_BtnNext {
+    position: fixed; 
+    top: 40%;
+    left: 102%;
+}
