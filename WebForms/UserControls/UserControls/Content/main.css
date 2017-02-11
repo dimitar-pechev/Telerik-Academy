@@ -1,0 +1,12 @@
+﻿.data-list {
+    background-color: navy;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none; 
+}
+
+.data-list:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: none; 
+}
