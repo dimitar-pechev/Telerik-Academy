@@ -1,0 +1,6 @@
+// Where is the bug :)
+
+PackageRepository.Delete() ---> even if the package is a dependency it is still deleted, although the logger says the operation should be aborted. 
+Threw an exception for the fun of it :D 
+
+PackageRepository.GetAll() ---> has a forgotten "temporary" test method
