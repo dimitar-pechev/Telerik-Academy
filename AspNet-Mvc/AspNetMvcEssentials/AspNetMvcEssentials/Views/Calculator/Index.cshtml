@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Bit Claculator";
+}
+
+<h2 class="text-center">Bit Calculator</h2>
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-4 text-center">
+        @using (Html.BeginForm())
+        {
+            <label for="quantity">Quantity:</label>
+            @Html.TextBox("quantityString", 1, new { @class = "form-control", id = "quantityString" })
+            <br />
+            <label for="unit">Unit:</label>
+            @Html.DropDownList("unit", null, new { @class = "form-control", id = "unit", name = "unit" });
+            <br />
+            <input type="submit" class="btn btn-success btn-block" />
+            <br />
+        }
+
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <p class="text-danger text-center">@ViewBag.ErrorMessage</p>
+        }
+
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Unit
+                    </th>
+                    <th>
+                        Quantity
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var key in ViewBag.BytesDictionary.Keys)
+            {
+                    <tr>
+                        <td>
+                            @key
+                        </td>
+                        <td>
+                            @(ViewBag.ErrorMessage == null ? ViewBag.BytesDictionary[key].ToString("G29") : "You went too far...")
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
