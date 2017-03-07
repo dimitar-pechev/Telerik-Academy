@@ -1,0 +1,74 @@
+﻿@model IEnumerable<AjaxWithAspNetMvc.Models.Movie>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Director)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeadingMaleRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeadingFemaleRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Studio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudioAddress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Director)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeadingMaleRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeadingFemaleRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Studio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudioAddress)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+
+                @using (Ajax.BeginForm("Delete", new { id = item.Id },
+                            new AjaxOptions
+                            {
+                                Confirm = $"Are you sure you want to delete the \"{item.Title}\" record?",
+                                UpdateTargetId = "results",
+                                InsertionMode = InsertionMode.Replace,
+                                HttpMethod = "POST"
+                            }, new { id = "deleteBtn" }))
+                {
+                    <input type="submit" name="delete" value="Delete" class="btn btn-default" />
+                }
+
+            </td>
+        </tr>
+    }
+</table>
