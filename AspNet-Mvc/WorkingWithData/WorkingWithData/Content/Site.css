@@ -1,0 +1,50 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.panel-heading, {
+    padding: 10px 30px 0 30px;
+}
+
+.panel-footer {
+    padding: 10px 30px;
+}
+
+.small {
+    font-size: 1rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.tweet-body {
+    border: 0.5px solid lightgrey;
+}
+
+.tweet-body:hover {
+    background-color: #F5F5F5;
+}
+
+.all-tweets-body {
+    height: 400px;
+    overflow: auto;
+}
+
+.filter-div {
+    margin: 10px 0;
+}
