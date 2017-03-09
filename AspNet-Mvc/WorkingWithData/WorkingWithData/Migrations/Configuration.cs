@@ -1,9 +1,10 @@
 namespace WorkingWithData.Migrations
 {
+    using Data;
     using Microsoft.AspNet.Identity.EntityFramework;
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ApplicationDbContext>
     {
         public Configuration()
         {
@@ -12,7 +13,7 @@ namespace WorkingWithData.Migrations
             ContextKey = "WorkingWithData.Models.ApplicationDbContext";
         }
 
-        protected override void Seed(Models.ApplicationDbContext context)
+        protected override void Seed(ApplicationDbContext context)
         {
             //// Seeding initail roles
             //var admin = new IdentityRole("admin");

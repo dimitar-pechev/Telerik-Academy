@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
 using Owin;
+using WorkingWithData.Data;
 using WorkingWithData.Models;
 
 [assembly: OwinStartupAttribute(typeof(WorkingWithData.Startup))]

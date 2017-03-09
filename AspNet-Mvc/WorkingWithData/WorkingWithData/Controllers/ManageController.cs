@@ -1,20 +1,23 @@
-﻿using System.Linq;
-using System.Web.Mvc;
-using WorkingWithData.Models;
+﻿using System.Web.Mvc;
+using WorkingWithData.Services.Contracts;
 
 namespace WorkingWithData.Controllers
 {
     [Authorize]
     public class ManageController : Controller
     {
-        private ApplicationDbContext context = new ApplicationDbContext();
+        private ITweetService service;
+
+        public ManageController(ITweetService service)
+        {
+            this.service = service;
+        }
 
         public ActionResult Index()
         {
-            var tweets = this.context.Tweets
-                .Where(x => x.User.UserName == this.User.Identity.Name)
-                .OrderByDescending(x => x.CreatedOn)
-                .ToList();
+            var username = this.User.Identity.Name;
+
+            var tweets = this.service.GetTweetsByUser(username);
 
             return View(tweets);
         }

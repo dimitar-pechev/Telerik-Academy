@@ -1,18 +1,22 @@
 ﻿using Microsoft.AspNet.Identity;
-using System;
-using System.Linq;
 using System.Web.Mvc;
 using WorkingWithData.Models;
+using WorkingWithData.Services.Contracts;
 
 namespace WorkingWithData.Controllers
 {
     public class HomeController : Controller
     {
-        private ApplicationDbContext context = new ApplicationDbContext();
+        private ITweetService service;
+
+        public HomeController(ITweetService service)
+        {
+            this.service = service;
+        }
 
         public ActionResult Index()
         {
-            ViewBag.Tweets = this.context.Tweets.OrderByDescending(x => x.CreatedOn).ToList();
+            ViewBag.Tweets = this.service.GetAllTweets();
             return View();
         }
 
@@ -23,33 +27,19 @@ namespace WorkingWithData.Controllers
         {
             if (ModelState.IsValid)
             {
-                tweet.Id = Guid.NewGuid();
-                tweet.UserId = this.User.Identity.GetUserId();
-                tweet.User = this.context.Users.Find(tweet.UserId);
+                var userId = this.User.Identity.GetUserId();
 
-                this.context.Tweets.Add(tweet);
-                this.context.SaveChanges();
-
+                this.service.Create(userId, tweet);
+                
                 return RedirectToAction("Index");
             }
-
-            ViewBag.UserId = new SelectList(this.context.Users, "Id", "Email", tweet.UserId);
+            
             return View(tweet);
         }
 
         public ActionResult Search(string query)
         {
-            if (string.IsNullOrEmpty(query))
-            {
-                ViewBag.Tweets = this.context.Tweets.OrderByDescending(x => x.CreatedOn).ToList();
-
-                return View("Index");
-            }
-
-            ViewBag.Tweets = this.context.Tweets
-                .Where(x => x.Content.ToLower().Contains(query.ToLower()))
-                .OrderByDescending(x => x.CreatedOn)
-                .ToList();
+            ViewBag.Tweets = this.service.GetTweetsByQuery(query);
 
             return View("Index");
         }
