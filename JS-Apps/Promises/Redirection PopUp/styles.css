@@ -1,21 +1,22 @@
 #popup {
     position: absolute;
     text-align: center;
-    line-height: 250px;
+    line-height: 280px;
+    font-size: 1.5rem;
     font-family: Tahoma;
     opacity: 1;
     top: 50%;
     left: 50%;
-    width: 250px;
-    height: 250px;
-    margin-top: -125px;
-    margin-left: -125px;
-    border: 3px solid #000;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+    margin-top: -175px;
+    margin-left: -175px;
+    border: 1px solid lightgrey;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     background-color: #fff;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 0 0 15px #888888;
 }
 
 #page-mask {
@@ -25,4 +26,42 @@
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-facebook {
+    padding: 15px 25px;
+    border-color: transparent;
+    font-size: 1.5rem;
+    background-color: #3B5998;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-facebook:hover {
+    background-color: #223459;    
+}
+
+.text {
+    display: inline-block;
+}
+
+.loader {
+    border: 9px solid #f3f3f3;
+    border-top: 9px solid #3B5998;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

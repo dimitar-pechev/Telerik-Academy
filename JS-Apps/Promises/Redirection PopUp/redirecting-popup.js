@@ -1,17 +1,20 @@
-var popup = document.getElementById('popup');
-    popup.style.opacity = 1;
+var popup = document.getElementById('popup'),
+    mask = document.getElementById('page-mask'),
+    popup = document.getElementById('popup'),
+    classHidden = 'hidden';
 
 var redirection = new Promise((resolve) => {
-    setInterval(() => {
-        popup.style.opacity -= 0.1;
-    }, 200);
     setTimeout(() => {
         resolve('https://www.facebook.com');
-    }, 2000);
-
+    }, 3000);
 });
 
-redirection
-    .then((url) => {
-        window.location = url;
-    });
+document.getElementById('btn-facebook').onclick = () => {
+    mask.classList.remove(classHidden);
+    popup.classList.remove(classHidden);
+
+    redirection
+        .then((url) => {
+            window.location = url;
+        });
+};

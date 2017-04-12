@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
+    <title>Redirecting Something...</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTMaXe-6RzXmA1r0RUqpdN6DMDrcDhBjbdeNDaf6jf2JofWbDDzw" alt="">
-    <div id="page-mask">
-
+    <button type="button" id="btn-facebook" class="btn-facebook">Redirect to Facebook</button>
+    <div id="page-mask" class="hidden">
     </div>
-    <div id="popup">Redirecting to Facebook...</div>
+    <div id="popup" class="hidden">
+        <div class="text">Redirecting to Facebook...</div>
+        <div class="loader"></div>
+    </div>
     <script src="redirecting-popup.js"></script>
 </body>
 

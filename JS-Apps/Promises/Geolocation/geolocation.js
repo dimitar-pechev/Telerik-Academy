@@ -12,6 +12,13 @@ var mapTools = {},
             progressBar.innerHTML = 'Location services are disabled on your browser!';
         }
     });
+    
+getLocation
+    .then(generateMap)
+    .then(generateMarker)
+    .then(generateInfoWindow)
+    .then(applyAnimeAndWindow)
+    .catch(errorHandler);
 
 function generateMap(position) {
     progressBar.innerHTML = '';
@@ -48,10 +55,3 @@ function errorHandler(error) {
     console.log(error);
     progressBar.innerHTML = 'The map could not be loaded! Please try again later!';
 }
-
-getLocation
-    .then(generateMap)
-    .then(generateMarker)
-    .then(generateInfoWindow)
-    .then(applyAnimeAndWindow)
-    .catch(errorHandler);
