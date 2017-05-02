@@ -12,8 +12,7 @@ function get(url) {
 }
 
 function getJSON(url, headers = {}) {
-    headers.authorization = localStorage.getItem('token');
-
+    headers['x-auth-key'] = localStorage.getItem('token');
     return new Promise((resolve, reject) => {
         $.ajax({
             url,
@@ -27,7 +26,7 @@ function getJSON(url, headers = {}) {
 }
 
 function putJSON(url, body, headers = {}) {
-    headers.authorization = localStorage.getItem('token');
+    headers['x-auth-key'] = localStorage.getItem('token');
     
     return new Promise((resolve, reject) => {
         $.ajax({
@@ -43,7 +42,7 @@ function putJSON(url, body, headers = {}) {
 }
 
 function postJSON(url, body, headers = {}) {
-    headers.authorization = localStorage.getItem('token');
+    headers['x-auth-key'] = localStorage.getItem('token');
     
     return new Promise((resolve, reject) => {
         $.ajax({
@@ -58,20 +57,4 @@ function postJSON(url, body, headers = {}) {
     });
 }
 
-function deleteJSON(url, body, headers = {}) {
-    headers.authorization = localStorage.getItem('token');
-    
-    return new Promise((resolve, reject) => {
-        $.ajax({
-            url,
-            headers,
-            method: 'DELETE',
-            contentType: 'application/json',
-            data: JSON.stringify(body)
-        })
-            .done(resolve)
-            .fail(reject);
-    });
-}
-
-export { get, getJSON, postJSON, putJSON, deleteJSON };
+export { get, getJSON, postJSON, putJSON };

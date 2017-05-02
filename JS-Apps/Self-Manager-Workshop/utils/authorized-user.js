@@ -7,6 +7,7 @@ module.exports = function (app, db) {
         var user = db('users').find({
             authKey: authKey
         });
+
         req.user = user || null;
         next();
     });

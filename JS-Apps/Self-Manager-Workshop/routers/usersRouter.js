@@ -7,20 +7,21 @@ var express = require('express'),
 module.exports = function (db) {
     var router = express.Router();
 
-    router.get('/', function (req, res) {
-        var page = +(req.query.page || 0),
-            size = +(req.query.size || 10);
+    router
+        .get('/', function (req, res) {
+            console.log(req.query);
+            var page = +(req.query.page || 1),
+                size = +(req.query.size || 10);
 
-        var users = db('users')
-            .chain()
-            .sortBy('username')
-            .slice(page * size)
-            .take(size).value();
+            var users = db('users')
+                .chain()
+                .sortBy('username')
+                .value();
 
-        res.json({
-            result: users || []
-        });
-    })
+            res.json({
+                result: users || []
+            });
+        })
         .post('/', function (req, res) {
             var user = req.body;
             console.log(user);
@@ -42,6 +43,7 @@ module.exports = function (db) {
         })
         .put('/auth', function (req, res) {
             var user = req.body;
+            console.log(user);
             var dbUser = db('users').find({
                 usernameLower: user.username.toLowerCase()
             });

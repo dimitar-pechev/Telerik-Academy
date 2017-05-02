@@ -14,9 +14,13 @@ SystemJS.config({
         'templates-compiler': '/public/scripts/templates-compiler.js',
 
         // services
+        'auth-service': '/public/scripts/services/auth.js',
+        'todos-service': '/public/scripts/services/todos.js',
 
         // controllers
         'home-controller': '/public/scripts/controllers/home.js',
+        'auth-controller': '/public/scripts/controllers/auth.js',
+        'todos-controller': '/public/scripts/controllers/todos.js',
         'controllers': '/public/scripts/controllers/index.js',
 
         // libs

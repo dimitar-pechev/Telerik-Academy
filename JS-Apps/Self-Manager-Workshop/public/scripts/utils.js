@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import toastr from 'toastr';
 
 function toggleButtonsIfLoggedIn() {
     if (localStorage.getItem('currentUser') != undefined) {
@@ -8,6 +9,16 @@ function toggleButtonsIfLoggedIn() {
         $('.logged-out').removeClass('hidden');
         $('.logged-in').addClass('hidden');
     }
+}
+
+function redirectIfNotLoggedIn() {
+    if (!localStorage.getItem('currentUser')) {
+        $(location).attr('href', '#!/login');
+        toastr.error('You need to be signed in to view this page!');
+        return true;
+    }
+
+    return false;
 }
 
 function formatDate(date) {
@@ -33,4 +44,4 @@ function _formatNumber(number) {
     return number.toString().length < 2 ? `0${number}` : number;
 }
 
-export { toggleButtonsIfLoggedIn, formatDate };
+export { toggleButtonsIfLoggedIn, formatDate, redirectIfNotLoggedIn };

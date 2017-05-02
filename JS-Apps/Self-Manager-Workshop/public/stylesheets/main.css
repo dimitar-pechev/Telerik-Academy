@@ -3,17 +3,47 @@ body {
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
+    border: 16px solid #f3f3f3;
+    /* Light grey */
     border-top: 16px solid #333333;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 2s linear infinite;    
+    animation: spin 2s linear infinite;
     margin: auto;
     margin-top: 60px;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.panel-credentials {
+    padding: 0 15px;
+    box-shadow: 0 0 10px lightgrey;
+}
+
+.panel-credentials h2 {
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+li {
+    list-style-type: none;
+}
+
+td {
+    max-width: 250px;
 }
