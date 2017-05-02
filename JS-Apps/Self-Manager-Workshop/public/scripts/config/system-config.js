@@ -16,11 +16,13 @@ SystemJS.config({
         // services
         'auth-service': '/public/scripts/services/auth.js',
         'todos-service': '/public/scripts/services/todos.js',
+        'events-service': '/public/scripts/services/events.js',
 
         // controllers
         'home-controller': '/public/scripts/controllers/home.js',
         'auth-controller': '/public/scripts/controllers/auth.js',
         'todos-controller': '/public/scripts/controllers/todos.js',
+        'events-controller': '/public/scripts/controllers/events.js',
         'controllers': '/public/scripts/controllers/index.js',
 
         // libs
@@ -28,6 +30,8 @@ SystemJS.config({
         'bootstrap': '/public/bower_components/bootstrap/dist/js/bootstrap.js',
         'navigo': '/public/bower_components/navigo/lib/navigo.js',
         'handlebars': '/public/bower_components/handlebars/handlebars.js',
-        'toastr': '/public/bower_components/toastr/toastr.js'
+        'toastr': '/public/bower_components/toastr/toastr.js',
+        'moment': '/public/bower_components/moment/moment.js',
+        'datepicker': '/public/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'
     }
 });

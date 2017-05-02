@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1 class="text-center">{{username}}'s TODOs</h1 </div>
+            <h1 class="text-center">{{username}}'s TODOs</h1>
         </div>
         <div class="col-md-1 text-right">
             <a href="#!/todos/create" class="btn btn-success">Create new TODO</a>
@@ -22,7 +22,7 @@
                 <tr id="{{id}}">
                     <td>{{category}}</td>
                     <td>{{text}}</td>
-                    <td><span id="todo-status-{{id}}">{{#if state}}Done!{{else}}To be done!{{/if}}</span></td>                    
+                    <td><span id="todo-status-{{id}}">{{#if state}}Done!{{else}}To be done!{{/if}}</span></td>
                     <td class="text-center"><button class="btn btn-success todo-change-status">Change status!</button></td>
                 </tr>
                 {{/each}}

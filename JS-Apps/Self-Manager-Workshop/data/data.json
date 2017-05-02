@@ -89,13 +89,13 @@
         {
           "id": 423937,
           "text": "PILENCA\n",
-          "state": false,
+          "state": true,
           "category": "aaaide "
         },
         {
           "id": 519948,
           "text": "asdasdasdasd",
-          "state": false,
+          "state": true,
           "category": "asdasd"
         },
         {
@@ -125,14 +125,40 @@
         {
           "id": 504825,
           "text": "asdasd",
-          "state": true,
+          "state": false,
           "category": "asdasd"
         },
         {
           "id": 531965,
           "text": "ьяаьяа",
-          "state": true,
+          "state": false,
           "category": "ьяаьяа"
+        }
+      ],
+      "events": [
+        {
+          "id": 689347,
+          "title": "asdasd",
+          "category": "asdasd",
+          "description": "asdasd",
+          "date": "2012-12-11T22:00:00.000Z",
+          "creatorId": "64f6f33e-715b-4359-8fd1-9d696afe4687",
+          "users": [
+            "64f6f33e-715b-4359-8fd1-9d696afe4687",
+            "64f6f33e-715b-4359-8fd1-9d696afe4687"
+          ]
+        },
+        {
+          "id": 777286,
+          "title": "asdasd",
+          "category": "asdasd",
+          "description": "asdasdasd",
+          "date": "2014-12-11T22:00:00.000Z",
+          "creatorId": "64f6f33e-715b-4359-8fd1-9d696afe4687",
+          "users": [
+            "498436b2-135e-40d7-838e-169e01615bf3",
+            "64f6f33e-715b-4359-8fd1-9d696afe4687"
+          ]
         }
       ]
     },
@@ -162,7 +188,33 @@
       "password": "asdasd",
       "usernameLower": "asdasdasd",
       "authKey": "undefinedvw!pXTe^Bac(vwGbX@Bhc!OYjPuP)SkRH&ErEplG@s_^gV^h%MW",
-      "id": "498436b2-135e-40d7-838e-169e01615bf3"
+      "id": "498436b2-135e-40d7-838e-169e01615bf3",
+      "events": [
+        {
+          "id": 276915,
+          "title": "asdas",
+          "category": "asdasdas",
+          "description": "asdasdasd",
+          "date": "2012-12-11T22:00:00.000Z",
+          "creatorId": "64f6f33e-715b-4359-8fd1-9d696afe4687",
+          "users": [
+            "498436b2-135e-40d7-838e-169e01615bf3",
+            "64f6f33e-715b-4359-8fd1-9d696afe4687"
+          ]
+        },
+        {
+          "id": 777286,
+          "title": "asdasd",
+          "category": "asdasd",
+          "description": "asdasdasd",
+          "date": "2014-12-11T22:00:00.000Z",
+          "creatorId": "64f6f33e-715b-4359-8fd1-9d696afe4687",
+          "users": [
+            "498436b2-135e-40d7-838e-169e01615bf3",
+            "64f6f33e-715b-4359-8fd1-9d696afe4687"
+          ]
+        }
+      ]
     },
     {
       "username": "asdasdaa",
@@ -177,6 +229,14 @@
       "usernameLower": "asdasdasdasd",
       "authKey": "undefinedcFq@ewRLYiq^fNHEPGmuCgSYrp_^*!#$vB@LY@tkKBMfuoYqg&P",
       "id": "d633b83c-7393-4569-8934-dd422614b9ad"
+    },
+    {
+      "username": "asdasdasw",
+      "password": "asdasd",
+      "usernameLower": "asdasdasw",
+      "authKey": "undefinedFx@MHpHkT#_owZPb*ReZM)CGMFP*(yl+MnAZ#DxSe+a-fyKlpzx",
+      "id": "7b043b4e-6f43-4225-b40c-2cc4ba5af678",
+      "events": []
     }
   ]
 }

@@ -16,6 +16,8 @@ router
     .on('/logout', controllers.auth.logout)    
     .on('/todos', controllers.todos.getTodosList)
     .on('/todos/create', controllers.todos.getCreatePage)
+    .on('/events', controllers.events.getEventsList)
+    .on('/events/create', controllers.events.getCreatePage)
     .on('*', controllers.home.getHomePage)
     .resolve();
 

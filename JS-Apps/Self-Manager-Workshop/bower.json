@@ -8,6 +8,7 @@
     "navigo": "^4.7.0",
     "handlebars": "^4.0.7",
     "toastr": "^2.1.3",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47"
   }
 }

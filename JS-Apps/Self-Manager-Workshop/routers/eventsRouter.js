@@ -27,9 +27,6 @@ module.exports = function (db) {
             }
         });
 
-        indicesToRemove.forEach(function (indexToRemove) {
-            user.events.splice(indexToRemove, 1);
-        });
         db.save();
 
         user.events.sort(function (e1, e2) {
