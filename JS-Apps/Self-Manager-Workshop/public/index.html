@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/public/bower_components/toastr/toastr.css">
+    <link rel="stylesheet" href="/public/stylesheets/main.css">
+    <title>Self Manager</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#!/home" class="navbar-brand">Self Manager</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+ 				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  			</button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#!/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#!/todos">TODOs</a>
+                    </li>
+                    <li>
+                        <a href="#!/events">Events</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right logged-out hidden">
+                    <li><a href="#!/login">Sign In</a></li>
+                    <li><a href="#!/register">Register</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right logged-in hidden">
+                    <li><a href="#!/profile">Profile</a></li>
+                    <li><a href="#!/logout">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container" id="main-container">
+        <div class="row">
+            <div class="loader"></div>
+            <br />
+            <h4 class="text-center">Loading...</h4>
+        </div>
+    </main>
+    <script src="/libs/systemjs/dist/system.js"></script>
+    <script src="/public/scripts/config/system-config.js"></script>
+    <script>
+        System.import('main');
+    </script>
+</body>
+
+</html>
